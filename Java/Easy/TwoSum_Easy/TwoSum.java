@@ -1,8 +1,6 @@
 package Java.Easy.TwoSum_Easy;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 
 class TwoSum {
 
