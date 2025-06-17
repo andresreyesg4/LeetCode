@@ -1,4 +1,4 @@
-package Java.Easy.PalindromeNumber_Easy;
+package Java.Easy.Palindrome_Number;
 
 public class SolutionA {
     

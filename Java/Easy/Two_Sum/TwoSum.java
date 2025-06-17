@@ -1,4 +1,4 @@
-package Java.Easy.TwoSum_Easy;
+package Java.Easy.Two_Sum;
 
 import java.util.ArrayList;
 
