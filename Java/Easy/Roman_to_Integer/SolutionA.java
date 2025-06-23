@@ -16,7 +16,7 @@ public class SolutionA {
         romanNumerals.put("D", 500);
         romanNumerals.put("M",1000);
 
-        int romanNumber = generateRomanNumeral(romanNumerals, "V");
+        int romanNumber = generateRomanNumeral(romanNumerals, "MCMXCIV");
         println(romanNumber);
     }
 
@@ -25,7 +25,15 @@ public class SolutionA {
         if(map.get(rm) != null){
             result = (int)map.get(rm);
         }else{
-            
+            for(int i = 0; i < rm.length(); i++){
+                int currentValue = (int)map.get(String.valueOf(rm.charAt(i)));
+
+                if(i + 1 < rm.length() && (int)map.get(String.valueOf(rm.charAt(i +1))) > currentValue){
+                    result -= currentValue;
+                }else{
+                    result += currentValue;
+                }
+            }    
         }
         return result;
     }
