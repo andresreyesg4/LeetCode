@@ -18,9 +18,7 @@ public class SolutionA {
             return "";
         }else{
             String smallest = strs[0];
-            String strtemp = "";
             int smallestLength = strs[0].length();
-            int smallesIndex = 0;
             for(String str: strs){
                 int temp = str.length();
                 if(temp < smallestLength){
@@ -47,7 +45,6 @@ public class SolutionA {
                     lcp.append(smallest.charAt(i));
                 }
                 numberOfHits = 0;
-                strtemp = lcp.toString();
             }
         }
         println(lcp.toString());
